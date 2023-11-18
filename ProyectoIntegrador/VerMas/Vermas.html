@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.8.3/dist/full.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+
+    <div class="card lg:card-side bg-base-100 shadow-xl">
+        <figure><img src="data:image/jpeg;base64,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" alt="Album"/></figure>
+        <div class="card-body">
+          <h2 class="card-title">Nombre del producto</h2>
+          <p>Descripción del producto.</p>
+          <div class="card-actions justify-end">
+    
+            <button class="btn">Cancelar</button>
+            <button class="btn btn-outline btn-accent" type="button" onclick="toggleModal('modal-id')">
+              Crear cambio
+            </button>
+            <div class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="modal-id">
+              <div class="relative w-auto my-6 mx-auto max-w-sm">
+                <!--content-->
+                <div class="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+                  <!--header-->
+                  <div class="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
+                    <h3 class="text-3xl font-semibold">
+                      ¿Estás seguro de hacer el cambio?
+                    </h3>
+                    <button class="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none" onclick="toggleModal('modal-id')">
+                      <span class="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
+                        ×
+                      </span>
+                    </button>
+                  </div>
+                  <!--body-->
+                  <div class="relative p-6 flex-auto">
+                    <p class="my-4 text-blueGray-500 text-lg leading-relaxed">
+                      Después de hacer el intercambio no podrás 
+                      regresar atrás. Todo queda en tus manos.
+                    </p>
+                  </div>
+                  <!--footer-->
+                  <div class="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
+                    <button class="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" onclick="toggleModal('modal-id')">
+                      Cancelar
+                    </button>
+                    <button class="bg-teal-400 btn-accent text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" onclick="toggleModal('modal-id')">
+                      Continuar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hidden opacity-25 fixed inset-0 z-40 bg-black" id="modal-id-backdrop"></div>
+            <script type="text/javascript">
+              function toggleModal(modalID){
+                document.getElementById(modalID).classList.toggle("hidden");
+                document.getElementById(modalID + "-backdrop").classList.toggle("hidden");
+                document.getElementById(modalID).classList.toggle("flex");
+                document.getElementById(modalID + "-backdrop").classList.toggle("flex");
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+
+
+
+<!-- Button trigger modal -->
+<button
+  type="button"
+  class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+  data-te-toggle="modal"
+  data-te-target="#leftTopModal"
+  data-te-ripple-init
+  data-te-ripple-color="light">
+  Top Left
+</button>
+
+<!-- Modal top left -->
+<div
+  data-te-modal-init
+  class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+  id="leftTopModal"
+  tabindex="-1"
+  aria-labelledby="leftTopModalLabel"
+  aria-hidden="true">
+  <div
+    data-te-modal-dialog-ref
+    class="pointer-events-none absolute left-7 h-auto w-full translate-x-[-100%] opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:max-w-[500px]">
+    <div
+      class="min-[576px]:shadow-[0_0.5rem_1rem_rgba(#000, 0.15)] pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-lg outline-none dark:bg-neutral-600">
+      <div
+        class="flex flex-shrink-0 items-center justify-between rounded-t-md bg-primary-600 p-4 dark:border-b dark:border-neutral-500 dark:bg-transparent">
+        <h5
+          class="text-xl font-medium leading-normal text-white"
+          id="leftTopModalLabel">
+          Modal title
+        </h5>
+        <button
+          type="button"
+          class="box-content rounded-none border-none text-white hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none"
+          data-te-modal-dismiss
+          aria-label="Close">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="h-6 w-6">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <div
+        class="relative flex flex-auto flex-wrap justify-center p-4"
+        data-te-modal-body-ref>
+        <span class="text-primary [&>svg]:h-16 [&>svg]:w-14">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor">
+            <path
+              fill-rule="evenodd"
+              d="M5.25 9a6.75 6.75 0 0113.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 01-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 11-7.48 0 24.585 24.585 0 01-4.831-1.244.75.75 0 01-.298-1.205A8.217 8.217 0 005.25 9.75V9zm4.502 8.9a2.25 2.25 0 104.496 0 25.057 25.057 0 01-4.496 0z"
+              clip-rule="evenodd" />
+          </svg>
+        </span>
+        <p class="p-4 text-center">
+          Do you want to receive the push notification about the newest
+          posts?
+        </p>
+      </div>
+      <div
+        class="flex flex-shrink-0 flex-wrap items-center justify-center rounded-b-md border-t-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50">
+        <button
+          type="button"
+          class="inline-block rounded bg-primary-100 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:bg-primary-accent-100 focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200"
+          data-te-modal-dismiss
+          data-te-ripple-init
+          data-te-ripple-color="light">
+          No
+        </button>
+        <button
+          type="button"
+          class="ml-1 inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+          data-te-ripple-init
+          data-te-ripple-color="light">
+          Yes
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Button trigger modal -->
+<button
+  type="button"
+  class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+  data-te-toggle="modal"
+  data-te-target="#rightTopModal"
+  data-te-ripple-init
+  data-te-ripple-color="light">
+  Top Right
+</button>
+
+<!-- Modal top right-->
+<div
+  data-te-modal-init
+  class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+  id="rightTopModal"
+  tabindex="-1"
+  aria-labelledby="rightTopModalLabel"
+  aria-hidden="true">
+  <div
+    data-te-modal-dialog-ref
+    class="pointer-events-none absolute right-7 h-auto w-full translate-x-[100%] opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:max-w-[500px]">
+    <div
+      class="min-[576px]:shadow-[0_0.5rem_1rem_rgba(#000, 0.15)] pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-lg outline-none dark:bg-neutral-600">
+      <div
+        class="flex flex-shrink-0 items-center justify-between rounded-t-md bg-info-600 p-4 dark:border-b dark:border-neutral-500 dark:bg-transparent">
+        <h5
+          class="text-xl font-medium leading-normal text-white"
+          id="rightTopModalLabel">
+          Product in the cart
+        </h5>
+        <button
+          type="button"
+          class="box-content rounded-none border-none text-white hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none"
+          data-te-modal-dismiss
+          aria-label="Close">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="h-6 w-6">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <div class="relative flex flex-auto p-4" data-te-modal-body-ref>
+        <span class="text-info-600 [&>svg]:h-16 [&>svg]:w-20">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor">
+            <path
+              d="M2.25 2.25a.75.75 0 000 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 00-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 000-1.5H5.378A2.25 2.25 0 017.5 15h11.218a.75.75 0 00.674-.421 60.358 60.358 0 002.96-7.228.75.75 0 00-.525-.965A60.864 60.864 0 005.68 4.509l-.232-.867A1.875 1.875 0 003.636 2.25H2.25zM3.75 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zM16.5 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z" />
+          </svg>
+        </span>
+        <div class="ml-8">
+          <p class="my-4">
+            Do you need more time to make a purchase decision?
+          </p>
+          <p class="my-4">
+            No pressure, your product will be waiting for you in the cart.
+          </p>
+        </div>
+      </div>
+      <div
+        class="flex flex-shrink-0 flex-wrap items-center justify-end rounded-b-md border-t-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50">
+        <button
+          type="button"
+          class="mr-2 inline-block rounded bg-info px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#54b4d3] transition duration-150 ease-in-out hover:bg-info-600 hover:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.3),0_4px_18px_0_rgba(84,180,211,0.2)] focus:bg-info-600 focus:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.3),0_4px_18px_0_rgba(84,180,211,0.2)] focus:outline-none focus:ring-0 active:bg-info-700 active:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.3),0_4px_18px_0_rgba(84,180,211,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(84,180,211,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.2),0_4px_18px_0_rgba(84,180,211,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.2),0_4px_18px_0_rgba(84,180,211,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.2),0_4px_18px_0_rgba(84,180,211,0.1)]"
+          data-te-ripple-init
+          data-te-ripple-color="light">
+          Go to the cart
+        </button>
+        <button
+          type="button"
+          class="inline-block rounded bg-primary-100 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:bg-primary-accent-100 focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200"
+          data-te-modal-dismiss
+          data-te-ripple-init
+          data-te-ripple-color="light">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Button trigger modal -->
+<button
+  type="button"
+  class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+  data-te-toggle="modal"
+  data-te-target="#rightBottomModal"
+  data-te-ripple-init
+  data-te-ripple-color="light">
+  Bottom Right
+</button>
+
+<!-- Modal bottom right -->
+<div
+  data-te-modal-init
+  class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+  id="rightBottomModal"
+  tabindex="-1"
+  aria-labelledby="rightBottomModalLabel"
+  aria-hidden="true">
+  <div
+    data-te-modal-dialog-ref
+    class="pointer-events-none absolute bottom-7 right-7 h-auto w-full translate-x-[100%] opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:max-w-[500px]">
+    <div
+      class="min-[576px]:shadow-[0_0.5rem_1rem_rgba(#000, 0.15)] pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-lg outline-none dark:bg-neutral-600">
+      <div
+        class="flex flex-shrink-0 items-center justify-between rounded-t-md bg-primary-600 p-4 dark:border-b dark:border-neutral-500 dark:bg-transparent">
+        <h5
+          class="text-xl font-medium leading-normal text-white"
+          id="rightBottomModalLabel">
+          Modal title
+        </h5>
+        <button
+          type="button"
+          class="box-content rounded-none border-none text-white hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none"
+          data-te-modal-dismiss
+          aria-label="Close">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="h-6 w-6">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <div
+        class="relative grid flex-auto grid-cols-2 p-4"
+        data-te-modal-body-ref>
+        <div>
+          <div
+            class="relative w-full overflow-hidden bg-cover bg-no-repeat"
+            data-te-ripple-init
+            data-te-ripple-color="light">
+            <img
+              src="https://tecdn.b-cdn.net/img/new/standard/city/041.webp"
+              class="w-full" />
+            <div
+              class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
+              style="background-color:  rgba(251, 251, 251, 0.15)"></div>
+          </div>
+        </div>
+        <div class="pl-6">
+          <p class="mb-4 font-bold">
+            Doloremque vero ex debitis veritatis?
+          </p>
+          <p class="mb-8">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
+            itaque voluptate nesciunt laborum incidunt. Officia, quam
+            consectetur. Earum eligendi aliquam illum alias.
+          </p>
+        </div>
+      </div>
+      <div
+        class="flex flex-shrink-0 flex-wrap items-center justify-end rounded-b-md border-t-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50">
+        <button
+          type="button"
+          class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+          data-te-ripple-init
+          data-te-ripple-color="light">
+          Read more
+        </button>
+        <button
+          type="button"
+          class="ml-1 inline-block rounded bg-primary-100 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:bg-primary-accent-100 focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200"
+          data-te-modal-dismiss
+          data-te-ripple-init
+          data-te-ripple-color="light">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Button trigger modal -->
+<button
+  type="button"
+  class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+  data-te-toggle="modal"
+  data-te-target="#leftBottomModal"
+  data-te-ripple-init
+  data-te-ripple-color="light">
+  Bottom Left
+</button>
+
+<!-- Modal bottom left -->
+<div
+  data-te-modal-init
+  class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+  id="leftBottomModal"
+  tabindex="-1"
+  aria-labelledby="leftBottomModalLabel"
+  aria-hidden="true">
+  <div
+    data-te-modal-dialog-ref
+    class="pointer-events-none absolute bottom-7 left-7 h-auto w-full translate-x-[-100%] opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:max-w-[500px]">
+    <div
+      class="min-[576px]:shadow-[0_0.5rem_1rem_rgba(#000, 0.15)] pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-lg outline-none dark:bg-neutral-600">
+      <div
+        class="flex flex-shrink-0 items-center justify-between rounded-t-md border-b border-neutral-200 p-4 dark:border-neutral-500">
+        <h5
+          class="text-xl font-medium leading-normal text-neutral-800 dark:text-neutral-200"
+          id="leftBottomModalLabel">
+          Subscribe
+        </h5>
+        <button
+          type="button"
+          class="box-content rounded-none border-none hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none"
+          data-te-modal-dismiss
+          aria-label="Close">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="h-6 w-6">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <div class="relative flex-auto p-4" data-te-modal-body-ref>
+        <form>
+          <!--Name input-->
+          <div
+            class="relative mb-6"
+            data-te-input-wrapper-init
+            data-te-class-notch-leading-normal="border-neutral-300 dark:border-neutral-400 group-data-[te-input-focused]:shadow-[-1px_0_0_#3b71ca,_0_1px_0_0_#3b71ca,_0_-1px_0_0_#3b71ca] group-data-[te-input-focused]:border-primary"
+            data-te-class-notch-middle-normal="border-neutral-300 dark:border-neutral-400 group-data-[te-input-focused]:shadow-[0_1px_0_0_#3b71ca] group-data-[te-input-focused]:border-primary"
+            data-te-class-notch-trailing-normal="border-neutral-300 dark:border-neutral-400 group-data-[te-input-focused]:shadow-[1px_0_0_#3b71ca,_0_-1px_0_0_#3b71ca,_0_1px_0_0_#3b71ca] group-data-[te-input-focused]:border-primary">
+            <input
+              type="text"
+              class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+              id="exampleInput90"
+              placeholder="Name" />
+            <label
+              for="exampleInput90"
+              class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
+              >Name
+            </label>
+          </div>
+
+          <!--Email input-->
+          <div
+            class="relative mb-6"
+            data-te-input-wrapper-init
+            data-te-class-notch-leading-normal="border-neutral-300 dark:border-neutral-400 group-data-[te-input-focused]:shadow-[-1px_0_0_#3b71ca,_0_1px_0_0_#3b71ca,_0_-1px_0_0_#3b71ca] group-data-[te-input-focused]:border-primary"
+            data-te-class-notch-middle-normal="border-neutral-300 dark:border-neutral-400 group-data-[te-input-focused]:shadow-[0_1px_0_0_#3b71ca] group-data-[te-input-focused]:border-primary"
+            data-te-class-notch-trailing-normal="border-neutral-300 dark:border-neutral-400 group-data-[te-input-focused]:shadow-[1px_0_0_#3b71ca,_0_-1px_0_0_#3b71ca,_0_1px_0_0_#3b71ca] group-data-[te-input-focused]:border-primary">
+            <input
+              type="email"
+              class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+              id="exampleInput91"
+              placeholder="Email address" />
+            <label
+              for="exampleInput91"
+              class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
+              >Email address
+            </label>
+          </div>
+
+          <!--Default checked checkbox-->
+          <div
+            class="mb-6 flex min-h-[1.5rem] items-center justify-center pl-[1.5rem]">
+            <input
+              class="relative float-left -ml-[1.5rem] mr-[6px] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-[''] checked:focus:before:scale-100 checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
+              type="checkbox"
+              value=""
+              checked
+              id="exampleCheck11" />
+            <label
+              class="inline-block pl-[0.15rem] hover:cursor-pointer"
+              for="exampleCheck11">
+              I have read and agree to the terms
+            </label>
+          </div>
+
+          <!--Submit button-->
+          <button
+            type="submit"
+            class="dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]] inline-block w-full rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+            data-te-ripple-init
+            data-te-ripple-color="light">
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+      
+
+<script src="https://cdn.tailwindcss.com"></script>   
+</body>
+</html>
