@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frutas y Verduras</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.8.3/dist/full.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body class="font-sans">
+
+<div>
+  <nav
+  id="sidenav-7" 
+  class="absolute left-0 top-0 z-[1035] h-full w-0 overflow-hidden bg-white shadow-[0_4px_12px_0_rgba(0,0,0,0.07),_0_2px_4px_rgba(0,0,0,0.05)] data-[te-sidenav-hidden='false']:translate-x-0 dark:bg-zinc-800 rounded-tl-none"
+
+  data-te-sidenav-init
+  data-te-sidenav-hidden="false"
+  data-te-sidenav-position="absolute"
+  data-te-sidenav-accordion="true">
+<a class="mb-3 flex items-center justify-center border-b-2 border-solid border-gray-100 py-6 outline-none"
+href="#!"
+data-te-ripple-init
+data-te-ripple-color="primary">
+<div class="flex">
+    <img
+      id="te-logo"
+      class="mr-2 w-6 "
+      src="C:\Users\PC\Desktop\ProyectoIntegrador\src\logo.png"
+      alt="TE Logo"
+      draggable="false" />
+    <span>FoodieSwap</span>
+</div>
+<div dir="rtl">
+    <div 
+    id = "tachita"
+    class="absolute top-0 start-0 p-2">
+        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" 
+        viewBox="0 0 14 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"></path>
+       </svg>
+    </div>
+</div>
+</a>
+
+<ul
+class="relative m-0 list-none px-[0.2rem] pb-12"
+data-te-sidenav-menu-ref>
+<li class="relative">
+  <a
+    href = "C:\Users\PC\Desktop\ProyectoIntegrador\Public\html\barra_principal.html"
+    class="flex cursor-pointer items-center truncate rounded-[5px] px-6 py-[0.45rem] text-[0.85rem] text-gray-600 outline-none transition duration-300 ease-linear hover:bg-slate-50 hover:text-inherit hover:outline-none focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
+    data-te-sidenav-link-ref>
+    <span
+      class="mr-4 [&>svg]:h-3.5 [&>svg]:w-3.5 [&>svg]:text-gray-400 dark:[&>svg]:text-gray-300">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        class="h-3.5 w-3.5">
+        <path
+          d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z" />
+        <path
+          d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z" />
+      </svg>
+    </span>
+    <span>Inicio</span>
+  </a>
+</li>
+<li class="relative pt-4">
+  <span
+    class="px-6 py-4 text-[0.6rem] font-bold uppercase text-gray-600 dark:text-gray-400"
+    >Nuevo</span>
+  <a
+    class="flex cursor-pointer items-center truncate rounded-[5px] px-6 py-[0.45rem] text-[0.85rem] text-gray-600 outline-none transition duration-300 ease-linear hover:bg-slate-50 hover:text-inherit hover:outline-none focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
+    data-te-sidenav-link-ref>
+    <span
+      class="mr-4 [&>svg]:h-5 [&>svg]:w-5 [&>svg]:text-gray-400 dark:[&>svg]:text-gray-300">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="h-5 w-5">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M12 4.5v15m7.5-7.5h-15" />
+      </svg>
+    </span>
+    <span>Agregar producto</span>
+
+    
+
+  </a>
+
+</li>
+
+<li class="relative pt-4">
+  <span
+    class="px-6 py-4 text-[0.6rem] font-bold uppercase text-gray-600 dark:text-gray-400">Opciones</span>
+  <a
+    href = "C:\Users\PC\Desktop\ProyectoIntegrador\Public\html\miperfil.html"
+    class="flex cursor-pointer items-center truncate rounded-[5px] px-6 py-[0.45rem] text-[0.85rem] text-gray-600 outline-none transition duration-300 ease-linear hover:bg-slate-50 hover:text-inherit hover:outline-none focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
+    data-te-sidenav-link-ref>
+    <span
+      class="mr-4 [&>svg]:h-3.5 [&>svg]:w-3.5 [&>svg]:text-gray-400 dark:[&>svg]:text-gray-300">
+      <svg class="w-[50px] h-[50px] fill-[#8e8e8e]" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+          <path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"></path>
+        
+        </svg>
+    </span>
+    <span>Mi perfil</span>
+  </a>
+
+  <a
+  href = "C:\Users\PC\Desktop\ProyectoIntegrador\Public\html\historial.html"
+  class="flex cursor-pointer items-center truncate rounded-[5px] px-6 py-[0.45rem] text-[0.85rem] text-gray-600 outline-none transition duration-300 ease-linear hover:bg-slate-50 hover:text-inherit hover:outline-none focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
+  data-te-sidenav-link-ref>
+  <span
+    class="mr-4 [&>svg]:h-3.5 [&>svg]:w-3.5 [&>svg]:text-gray-400 dark:[&>svg]:text-gray-300">
+    <svg class="w-[50px] h-[50px] fill-[#8e8e8e]" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+      <path d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM80 64h64c8.8 0 16 7.2 16 16s-7.2 16-16 16H80c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64h64c8.8 0 16 7.2 16 16s-7.2 16-16 16H80c-8.8 0-16-7.2-16-16s7.2-16 16-16zm54.2 253.8c-6.1 20.3-24.8 34.2-46 34.2H80c-8.8 0-16-7.2-16-16s7.2-16 16-16h8.2c7.1 0 13.3-4.6 15.3-11.4l14.9-49.5c3.4-11.3 13.8-19.1 25.6-19.1s22.2 7.7 25.6 19.1l11.6 38.6c7.4-6.2 16.8-9.7 26.8-9.7c15.9 0 30.4 9 37.5 23.2l4.4 8.8H304c8.8 0 16 7.2 16 16s-7.2 16-16 16H240c-6.1 0-11.6-3.4-14.3-8.8l-8.8-17.7c-1.7-3.4-5.1-5.5-8.8-5.5s-7.2 2.1-8.8 5.5l-8.8 17.7c-2.9 5.9-9.2 9.4-15.7 8.8s-12.1-5.1-13.9-11.3L144 349l-9.8 32.8z"></path>
+      </svg>
+  </span>
+  <span>Historial</span>
+</a>
+
+</li>
+
+<li class="relative pt-4">
+  <span
+    class="px-6 py-4 text-[0.6rem] font-bold uppercase text-gray-600 dark:text-gray-400"
+    >Contactos</span
+  >
+  <a
+    href = "C:\Users\PC\Desktop\ProyectoIntegrador\Public\html\perfilGuillermo.html"
+    class="flex cursor-pointer items-center truncate rounded-[5px] px-6 py-[0.45rem] text-[0.85rem] text-gray-600 outline-none transition duration-300 ease-linear hover:bg-slate-50 hover:text-inherit hover:outline-none focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
+    data-te-sidenav-link-ref>
+    <span
+      class="mr-4 [&>svg]:h-3.5 [&>svg]:w-3.5 [&>svg]:text-gray-400 dark:[&>svg]:text-gray-300">
+  
+      <div class="avatar online">
+        <div class="w-8 rounded-full">
+            <img src="C:\Users\PC\Desktop\ProyectoIntegrador\src\perfil2.png" />
+        </div>
+    </div>      
+    
+        <path d="M12 7.5a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z" />
+        <path
+          fill-rule="evenodd"
+          d="M1.5 4.875C1.5 3.839 2.34 3 3.375 3h17.25c1.035 0 1.875.84 1.875 1.875v9.75c0 1.036-.84 1.875-1.875 1.875H3.375A1.875 1.875 0 011.5 14.625v-9.75zM8.25 9.75a3.75 3.75 0 117.5 0 3.75 3.75 0 01-7.5 0zM18.75 9a.75.75 0 00-.75.75v.008c0 .414.336.75.75.75h.008a.75.75 0 00.75-.75V9.75a.75.75 0 00-.75-.75h-.008zM4.5 9.75A.75.75 0 015.25 9h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75H5.25a.75.75 0 01-.75-.75V9.75z"
+          clip-rule="evenodd" />
+        <path
+          d="M2.25 18a.75.75 0 000 1.5c5.4 0 10.63.722 15.6 2.075 1.19.324 2.4-.558 2.4-1.82V18.75a.75.75 0 00-.75-.75H2.25z" />
+      </svg>
+    </span>
+    <span>Guillermo Beltrán</span>
+  </a>
+</li>
+
+  <a
+    href = "C:\Users\PC\Desktop\ProyectoIntegrador\Public\html\perfilAlfonsina.html"
+    class="flex cursor-pointer items-center truncate rounded-[5px] px-6 py-[0.45rem] text-[0.85rem] text-gray-600 outline-none transition duration-300 ease-linear hover:bg-slate-50 hover:text-inherit hover:outline-none focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
+    data-te-sidenav-link-ref>
+    <span
+      class="mr-4 [&>svg]:h-3.5 [&>svg]:w-3.5 [&>svg]:text-gray-400 dark:[&>svg]:text-gray-300">
+  
+      <div class="avatar offline">
+        <div class="w-8 rounded-full">
+            <img src="C:\Users\PC\Desktop\ProyectoIntegrador\src\perfil3.png" />
+        </div>
+    </div>      
+    
+        <path d="M12 7.5a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z" />
+        <path
+          fill-rule="evenodd"
+          d="M1.5 4.875C1.5 3.839 2.34 3 3.375 3h17.25c1.035 0 1.875.84 1.875 1.875v9.75c0 1.036-.84 1.875-1.875 1.875H3.375A1.875 1.875 0 011.5 14.625v-9.75zM8.25 9.75a3.75 3.75 0 117.5 0 3.75 3.75 0 01-7.5 0zM18.75 9a.75.75 0 00-.75.75v.008c0 .414.336.75.75.75h.008a.75.75 0 00.75-.75V9.75a.75.75 0 00-.75-.75h-.008zM4.5 9.75A.75.75 0 015.25 9h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75H5.25a.75.75 0 01-.75-.75V9.75z"
+          clip-rule="evenodd" />
+        <path
+          d="M2.25 18a.75.75 0 000 1.5c5.4 0 10.63.722 15.6 2.075 1.19.324 2.4-.558 2.4-1.82V18.75a.75.75 0 00-.75-.75H2.25z" />
+      </svg>
+    </span>
+    <span>Alfonsina Tovar</span>
+  </a>
+</li>
+
+</div>   
+
+
+<!-- barra -->
+        <nav
+          class="flex-no-wrap relative flex w-full items-center justify-between bg-emerald-200 py-2 shadow-md shadow-black/5 dark:bg-neutral-600 dark:shadow-black/10 lg:flex-wrap lg:justify-start lg:py-4 ">
+
+
+          <div class="flex w-full flex-wrap items-center justify-between px-3">
+        
+            <button
+            class=" block border-0 bg-transparent px-2 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
+            type="button"
+            data-te-collapse-init
+            data-te-target="#navbarSupportedContent1"
+            aria-controls="navbarSupportedContent1"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      
+            <span class="[&>svg]:w-7">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="h-7 w-7">
+                <path
+                  fill-rule="evenodd"
+                  d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+                  clip-rule="evenodd" />
+              </svg>
+            </span>
+          </button>      
+        
+            <div
+              class="!visible hidden flex-grow basis-[100%] items-center lg:!flex lg:basis-auto"
+              id="navbarSupportedContent1"
+              data-te-collapse-item>
+              
+              <!-- Logo -->
+              <label id="openMenu" class="btn bg-emerald-200 border-emerald-200 hover:bg-emerald-500 hover:border-emerald-500 btn-active" data-te-navbar-nav-ref>
+              <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"/></svg>
+            </label>
+              <a 
+              href = "C:\Users\PC\Desktop\ProyectoIntegrador\Public\html\barra_principal.html"
+              class="mb-4 ml-2 mr-5 mt-3 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:mb-0 lg:mt-0" href="#">
+                <img src="C:\Users\PC\Desktop\ProyectoIntegrador\src\logo.png" class="drop-shadow-md" style="height: 30px" alt="TE Logo" loading="lazy" />
+              </a>
+              
+              <ul
+                class="list-style-none mr-auto  flex flex-col pl-0 lg:flex-row"
+                data-te-navbar-nav-ref>
+                <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
+                  
+                  <a
+                    class="text-neutral-950 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-zinc-400"
+                    href="C:\Users\PC\Desktop\ProyectoIntegrador\Public\html\Acerca_de_nosotrosin.html"
+                    data-te-nav-link-ref
+                    >Acerca de nosotros</a>
+                </li>
+                
+                <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
+                  <a
+                    class="text-neutral-950 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                    href="C:\Users\PC\Desktop\ProyectoIntegrador\Public\html\zonasin.html"
+                    data-te-nav-link-ref>
+                    Zonas de entrega</a>
+                </li>
+                <!-- Projects link -->
+                <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
+                  <a
+                    class="text-neutral-950 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                    href="C:\Users\PC\Desktop\ProyectoIntegrador\Public\html\donaciones.html"
+                    data-te-nav-link-ref
+                    >Donaciones</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+    <!-- Right elements -->
+
+    <!-- Search -->
+    <div class="relative flex items-center">
+       
+      <div class="">
+        <div class="mx-auto max-w-md sm:mx-auto sm:max-w-lg sm:px-10">
+    
+    
+          <form action="" class="relative mx-auto w-max">
+            <input type="search" 
+                  class="peer cursor-pointer border-black relative z-10 h-12 w-12 rounded-full border bg-transparent pl-12 outline-none focus:w-full focus:cursor-text focus:border-black focus:pl-16 focus:pr-4" />
+            <svg xmlns="http://www.w3.org/2000/svg" class="absolute inset-y-0 my-auto h-8 w-12 border-r border-transparent stroke-black px-3.5 peer-focus:border-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </form>
+    
+    
+        </div>
+      </div>
+    </div>
+          
+
+      <!-- Container with two dropdown menus -->
+      <div
+        class="relative"
+        data-te-dropdown-ref
+        data-te-dropdown-alignment="end">
+        <!-- First dropdown trigger -->
+        <a
+          class="hidden-arrow mr-4 flex items-center text-black transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 [&.active]:text-white dark:[&.active]:text-neutral-400"
+          href="#"
+          id="dropdownMenuButton1"
+          role="button"
+          data-te-dropdown-toggle-ref
+          aria-expanded="false">
+          <!-- Dropdown trigger icon -->
+          <span class="[&>svg]:w-8">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="3 2 18 18"
+              fill="currentColor"
+              class="h-10 w-10">
+              <path
+                fill-rule="evenodd"
+                d="M5.25 9a6.75 6.75 0 0113.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 01-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 11-7.48 0 24.585 24.585 0 01-4.831-1.244.75.75 0 01-.298-1.205A8.217 8.217 0 005.25 9.75V9zm4.502 8.9a2.25 2.25 0 104.496 0 25.057 25.057 0 01-4.496 0z"
+                clip-rule="evenodd" />
+            </svg>
+          </span>
+          
+          <!-- Notification counter -->
+          <span
+            class="absolute mt-0 ml-5 rounded-full bg-emerald-500 px-[0.45em] py-[0.25em] text-[0.6rem] font-bold leading-none text-black"
+            >1</span
+          >
+        </a>
+        <!-- First dropdown menu -->
+        <ul
+          class="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 [&[data-te-dropdown-show]]:block"
+          aria-labelledby="dropdownMenuButton1"
+          data-te-dropdown-menu-ref>
+        </ul>
+      </div>
+
+      <!-- Mi perfil -->
+      <div class="relative inline-block text-left">
+       <div>
+            <img id="profileImg" src="C:\Users\PC\Desktop\ProyectoIntegrador\src\miperfil.png" class="rounded-full h-12 w-12 cursor-pointer" alt="Mi Perfil" />
+        </div>
+        <div id="dropdownMenu" class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden">
+            <div class="py-1">
+                <a href="C:\Users\PC\Desktop\ProyectoIntegrador\Public\html\miperfil.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                    <div class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 text-gray-500" viewBox="0 0 600 500" fill="currentColor">
+                          <path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"></path>
+                        </svg>
+                        Mi Perfil
+                    </div>
+                </a>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                    <div class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 text-gray-500" viewBox="0 0 600 500" fill="currentColor">
+                          <path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 192 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l210.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128zM160 96c17.7 0 32-14.3 32-32s-14.3-32-32-32L96 32C43 32 0 75 0 128L0 384c0 53 43 96 96 96l64 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-64 0c-17.7 0-32-14.3-32-32l0-256c0-17.7 14.3-32 32-32l64 0z"></path>
+                        </svg>
+                        Cerrar Sesión
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+        </ul>
+      </div>
+      
+    </div>
+  </div>
+
+
+</nav> 
+
+
+<!-- PRODUCTS -->
+
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+<div class="mt-16 ml-8">
+  <h3 class="text-gray-600 text-2xl font-medium">Frutas y Verduras</h3>
+</div>
+                <br>
+
+                <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-6">
+                  <button class="w-full max-w-sm mx-auto rounded-md shadow-md overflow-hidden">
+                    <div class="flex items-center justify-center h-56 w-full bg-white">
+                        <!-- Larger Plus sign icon -->
+                        <svg class="w-64 h-56 bg-gray-200 text-white">
+                            <line x1="45" y1="112" x2="215" y2="112" stroke-width="4" stroke="currentColor" />
+                            <line x1="132" y1="30" x2="132" y2="190" stroke-width="4" stroke="currentColor" />
+                        </svg>
+                    </div>
+                    <div class="px-5 py-3">
+                        <h3 class="text-gray-700 text-center uppercase">Agregar producto</h3>
+                    </div>
+
+                </button class="rounded-full focus:outline-none focus:ring">
+  
+                    <div class="w-full max-w-sm mx-auto rounded-md shadow-md overflow-hidden k">
+                      <div class="flex items-center justify-center h-56 w-full">
+                        <img src="C:\Users\PC\Desktop\ProyectoIntegrador\src\cremalala.png" alt="Background Image" class="w-full h-full object-cover">
+                        </div>
+                        <div class="justify-between items-center flex py-3">
+                           <div class="ml-4"><h3 class="text-gray-700 uppercase">Crema light</h3>
+                            </div>
+                            <button class="p-3 rounded-full bg-emerald-300 text-white mx-5 hover:bg-emerald-200 focus:outline-none focus:bg-emerald-200 justify-center"
+                            data-te-toggle="modal"
+                            data-te-target="#Modal-cremalight"
+                            data-te-ripple-init
+                            data-te-ripple-color="light" >
+                              <svg class="w-[18px] h-[18px] fill-[#ffffff]" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M288 80c-65.2 0-118.8 29.6-159.9 67.7C89.6 183.5 63 226 49.4 256c13.6 30 40.2 72.5 78.6 108.3C169.2 402.4 222.8 432 288 432s118.8-29.6 159.9-67.7C486.4 328.5 513 286 526.6 256c-13.6-30-40.2-72.5-78.6-108.3C406.8 109.6 353.2 80 288 80zM95.4 112.6C142.5 68.8 207.2 32 288 32s145.5 36.8 192.6 80.6c46.8 43.5 78.1 95.4 93 131.1c3.3 7.9 3.3 16.7 0 24.6c-14.9 35.7-46.2 87.7-93 131.1C433.5 443.2 368.8 480 288 480s-145.5-36.8-192.6-80.6C48.6 356 17.3 304 2.5 268.3c-3.3-7.9-3.3-16.7 0-24.6C17.3 208 48.6 156 95.4 112.6zM288 336c44.2 0 80-35.8 80-80s-35.8-80-80-80c-.7 0-1.3 0-2 0c1.3 5.1 2 10.5 2 16c0 35.3-28.7 64-64 64c-5.5 0-10.9-.7-16-2c0 .7 0 1.3 0 2c0 44.2 35.8 80 80 80zm0-208a128 128 0 1 1 0 256 128 128 0 1 1 0-256z"></path>
+                              </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="w-full max-w-sm mx-auto rounded-md shadow-md overflow-hidden k">
+                      <div class="flex items-center justify-center h-56 w-full">
+                        <img src="C:\Users\PC\Desktop\ProyectoIntegrador\src\quesocrema.png" alt="Background Image" class="w-full h-full object-cover">
+                        </div>
+                        <div class="justify-between items-center flex py-3">
+                           <div class="ml-4"><h3 class="text-gray-700 uppercase">Queso crema</h3>
+                          </div>
+                          <button class="p-3 rounded-full bg-emerald-300 text-white mx-5 hover:bg-emerald-200 focus:outline-none focus:bg-emerald-200 justify-center"
+                            data-te-toggle="modal"
+                            data-te-target="#Modal-cremalight"
+                            data-te-ripple-init
+                            data-te-ripple-color="light" >
+                              <svg class="w-[18px] h-[18px] fill-[#ffffff]" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M288 80c-65.2 0-118.8 29.6-159.9 67.7C89.6 183.5 63 226 49.4 256c13.6 30 40.2 72.5 78.6 108.3C169.2 402.4 222.8 432 288 432s118.8-29.6 159.9-67.7C486.4 328.5 513 286 526.6 256c-13.6-30-40.2-72.5-78.6-108.3C406.8 109.6 353.2 80 288 80zM95.4 112.6C142.5 68.8 207.2 32 288 32s145.5 36.8 192.6 80.6c46.8 43.5 78.1 95.4 93 131.1c3.3 7.9 3.3 16.7 0 24.6c-14.9 35.7-46.2 87.7-93 131.1C433.5 443.2 368.8 480 288 480s-145.5-36.8-192.6-80.6C48.6 356 17.3 304 2.5 268.3c-3.3-7.9-3.3-16.7 0-24.6C17.3 208 48.6 156 95.4 112.6zM288 336c44.2 0 80-35.8 80-80s-35.8-80-80-80c-.7 0-1.3 0-2 0c1.3 5.1 2 10.5 2 16c0 35.3-28.7 64-64 64c-5.5 0-10.9-.7-16-2c0 .7 0 1.3 0 2c0 44.2 35.8 80 80 80zm0-208a128 128 0 1 1 0 256 128 128 0 1 1 0-256z"></path>
+                              </svg>
+                            </button>                         
+                        </div>
+                    </div>
+<!---->
+                    <div class="w-full max-w-sm mx-auto rounded-md shadow-md overflow-hidden k">
+                      <div class="flex items-center justify-center h-56 w-full">
+                        <img src="C:\Users\PC\Desktop\ProyectoIntegrador\src\yogurthfrutas.png" alt="Background Image" class="w-full h-full object-cover">
+                        </div>
+                        <div class="justify-between items-center flex py-3">
+                           <div class="ml-4"><h3 class="text-gray-700 uppercase">Yogurth frutas</h3>
+                           </div>
+                           <button class="p-3 rounded-full bg-emerald-300 text-white mx-5 hover:bg-emerald-200 focus:outline-none focus:bg-emerald-200 justify-center"
+                           data-te-toggle="modal"
+                           data-te-target="#Modal-cremalight"
+                           data-te-ripple-init
+                           data-te-ripple-color="light" >
+                             <svg class="w-[18px] h-[18px] fill-[#ffffff]" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+                               <path d="M288 80c-65.2 0-118.8 29.6-159.9 67.7C89.6 183.5 63 226 49.4 256c13.6 30 40.2 72.5 78.6 108.3C169.2 402.4 222.8 432 288 432s118.8-29.6 159.9-67.7C486.4 328.5 513 286 526.6 256c-13.6-30-40.2-72.5-78.6-108.3C406.8 109.6 353.2 80 288 80zM95.4 112.6C142.5 68.8 207.2 32 288 32s145.5 36.8 192.6 80.6c46.8 43.5 78.1 95.4 93 131.1c3.3 7.9 3.3 16.7 0 24.6c-14.9 35.7-46.2 87.7-93 131.1C433.5 443.2 368.8 480 288 480s-145.5-36.8-192.6-80.6C48.6 356 17.3 304 2.5 268.3c-3.3-7.9-3.3-16.7 0-24.6C17.3 208 48.6 156 95.4 112.6zM288 336c44.2 0 80-35.8 80-80s-35.8-80-80-80c-.7 0-1.3 0-2 0c1.3 5.1 2 10.5 2 16c0 35.3-28.7 64-64 64c-5.5 0-10.9-.7-16-2c0 .7 0 1.3 0 2c0 44.2 35.8 80 80 80zm0-208a128 128 0 1 1 0 256 128 128 0 1 1 0-256z"></path>
+                             </svg>
+                           </button>
+                        </div>
+                    </div>
+
+                    <div class="w-full max-w-sm mx-auto rounded-md shadow-md overflow-hidden k">
+                      <div class="flex items-center justify-center h-56 w-full">
+                        <img src="C:\Users\PC\Desktop\ProyectoIntegrador\src\lechefresca.png" alt="Background Image" class="w-full h-full object-cover">
+                        </div>
+                        <div class="justify-between items-center flex py-3">
+                           <div class="ml-4"><h3 class="text-gray-700 uppercase">Leche Fresca</h3>
+                            </div>
+                            <button class="p-3 rounded-full bg-emerald-300 text-white mx-5 hover:bg-emerald-200 focus:outline-none focus:bg-emerald-200 justify-center"
+                            data-te-toggle="modal"
+                            data-te-target="#Modal-lechefresca"
+                            data-te-ripple-init
+                            data-te-ripple-color="light"
+                            >
+                              <svg class="w-[18px] h-[18px] fill-[#ffffff]" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M288 80c-65.2 0-118.8 29.6-159.9 67.7C89.6 183.5 63 226 49.4 256c13.6 30 40.2 72.5 78.6 108.3C169.2 402.4 222.8 432 288 432s118.8-29.6 159.9-67.7C486.4 328.5 513 286 526.6 256c-13.6-30-40.2-72.5-78.6-108.3C406.8 109.6 353.2 80 288 80zM95.4 112.6C142.5 68.8 207.2 32 288 32s145.5 36.8 192.6 80.6c46.8 43.5 78.1 95.4 93 131.1c3.3 7.9 3.3 16.7 0 24.6c-14.9 35.7-46.2 87.7-93 131.1C433.5 443.2 368.8 480 288 480s-145.5-36.8-192.6-80.6C48.6 356 17.3 304 2.5 268.3c-3.3-7.9-3.3-16.7 0-24.6C17.3 208 48.6 156 95.4 112.6zM288 336c44.2 0 80-35.8 80-80s-35.8-80-80-80c-.7 0-1.3 0-2 0c1.3 5.1 2 10.5 2 16c0 35.3-28.7 64-64 64c-5.5 0-10.9-.7-16-2c0 .7 0 1.3 0 2c0 44.2 35.8 80 80 80zm0-208a128 128 0 1 1 0 256 128 128 0 1 1 0-256z"></path>
+                              </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="w-full max-w-sm mx-auto rounded-md shadow-md overflow-hidden k">
+                      <div class="flex items-center justify-center h-56 w-full">
+                        <img src="C:\Users\PC\Desktop\ProyectoIntegrador\src\yogurthnatural.png" alt="Background Image" class="w-full h-full object-cover">
+                        </div>
+                        <div class="justify-between items-center flex py-3">
+                           <div class="ml-4"><h3 class="text-gray-700 uppercase">Yogurth natural</h3>
+                            </div>
+                            <button class="p-3 rounded-full bg-emerald-300 text-white mx-5 hover:bg-emerald-200 focus:outline-none focus:bg-emerald-200 justify-center"
+                            data-te-toggle="modal"
+                            data-te-target="#Modal-yogurthnatural"
+                            data-te-ripple-init
+                            data-te-ripple-color="light"
+                            >
+                            <svg class="w-[18px] h-[18px] fill-[#ffffff]" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M288 80c-65.2 0-118.8 29.6-159.9 67.7C89.6 183.5 63 226 49.4 256c13.6 30 40.2 72.5 78.6 108.3C169.2 402.4 222.8 432 288 432s118.8-29.6 159.9-67.7C486.4 328.5 513 286 526.6 256c-13.6-30-40.2-72.5-78.6-108.3C406.8 109.6 353.2 80 288 80zM95.4 112.6C142.5 68.8 207.2 32 288 32s145.5 36.8 192.6 80.6c46.8 43.5 78.1 95.4 93 131.1c3.3 7.9 3.3 16.7 0 24.6c-14.9 35.7-46.2 87.7-93 131.1C433.5 443.2 368.8 480 288 480s-145.5-36.8-192.6-80.6C48.6 356 17.3 304 2.5 268.3c-3.3-7.9-3.3-16.7 0-24.6C17.3 208 48.6 156 95.4 112.6zM288 336c44.2 0 80-35.8 80-80s-35.8-80-80-80c-.7 0-1.3 0-2 0c1.3 5.1 2 10.5 2 16c0 35.3-28.7 64-64 64c-5.5 0-10.9-.7-16-2c0 .7 0 1.3 0 2c0 44.2 35.8 80 80 80zm0-208a128 128 0 1 1 0 256 128 128 0 1 1 0-256z"></path>
+                            </svg>
+                          </button>
+                      </div>
+                  </div>
+
+                    <div class="w-full max-w-sm mx-auto rounded-md shadow-md overflow-hidden k">
+                      <div class="flex items-center justify-center h-56 w-full">
+                        <img src="C:\Users\PC\Desktop\ProyectoIntegrador\src\6yoplait.png" alt="Background Image" class="w-full h-full object-cover">
+                        </div>
+                        <div class="justify-between items-center flex py-3">
+                           <div class="ml-4"><h3 class="text-gray-700 uppercase">Yogurth para beber</h3>
+                            </div>
+                            <button class="p-3 rounded-full bg-emerald-300 text-white mx-5 hover:bg-emerald-200 focus:outline-none focus:bg-emerald-200 justify-center"
+                            data-te-toggle="modal"
+                            data-te-target="#Modal-yogurthparabeber"
+                            data-te-ripple-init
+                            data-te-ripple-color="light"
+                            >
+                              <svg class="w-[18px] h-[18px] fill-[#ffffff]" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M288 80c-65.2 0-118.8 29.6-159.9 67.7C89.6 183.5 63 226 49.4 256c13.6 30 40.2 72.5 78.6 108.3C169.2 402.4 222.8 432 288 432s118.8-29.6 159.9-67.7C486.4 328.5 513 286 526.6 256c-13.6-30-40.2-72.5-78.6-108.3C406.8 109.6 353.2 80 288 80zM95.4 112.6C142.5 68.8 207.2 32 288 32s145.5 36.8 192.6 80.6c46.8 43.5 78.1 95.4 93 131.1c3.3 7.9 3.3 16.7 0 24.6c-14.9 35.7-46.2 87.7-93 131.1C433.5 443.2 368.8 480 288 480s-145.5-36.8-192.6-80.6C48.6 356 17.3 304 2.5 268.3c-3.3-7.9-3.3-16.7 0-24.6C17.3 208 48.6 156 95.4 112.6zM288 336c44.2 0 80-35.8 80-80s-35.8-80-80-80c-.7 0-1.3 0-2 0c1.3 5.1 2 10.5 2 16c0 35.3-28.7 64-64 64c-5.5 0-10.9-.7-16-2c0 .7 0 1.3 0 2c0 44.2 35.8 80 80 80zm0-208a128 128 0 1 1 0 256 128 128 0 1 1 0-256z"></path>
+                              </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="w-full max-w-sm mx-auto rounded-md shadow-md overflow-hidden k">
+                      <div class="flex items-center justify-center h-56 w-full">
+                        <img src="C:\Users\PC\Desktop\ProyectoIntegrador\src\mantequilla.png" alt="Background Image" class="w-full h-full object-cover">
+                        </div>
+                        <div class="justify-between items-center flex py-3">
+                           <div class="ml-4"><h3 class="text-gray-700 uppercase">Mantequilla</h3>
+                            </div>
+                            <button class="p-3 rounded-full bg-emerald-300 text-white mx-5 hover:bg-emerald-200 focus:outline-none focus:bg-emerald-200 justify-center"
+                            data-te-toggle="modal"
+                            data-te-target="#Modal-mantequilla"
+                            data-te-ripple-init
+                            data-te-ripple-color="light"
+                            >
+                              <svg class="w-[18px] h-[18px] fill-[#ffffff]" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M288 80c-65.2 0-118.8 29.6-159.9 67.7C89.6 183.5 63 226 49.4 256c13.6 30 40.2 72.5 78.6 108.3C169.2 402.4 222.8 432 288 432s118.8-29.6 159.9-67.7C486.4 328.5 513 286 526.6 256c-13.6-30-40.2-72.5-78.6-108.3C406.8 109.6 353.2 80 288 80zM95.4 112.6C142.5 68.8 207.2 32 288 32s145.5 36.8 192.6 80.6c46.8 43.5 78.1 95.4 93 131.1c3.3 7.9 3.3 16.7 0 24.6c-14.9 35.7-46.2 87.7-93 131.1C433.5 443.2 368.8 480 288 480s-145.5-36.8-192.6-80.6C48.6 356 17.3 304 2.5 268.3c-3.3-7.9-3.3-16.7 0-24.6C17.3 208 48.6 156 95.4 112.6zM288 336c44.2 0 80-35.8 80-80s-35.8-80-80-80c-.7 0-1.3 0-2 0c1.3 5.1 2 10.5 2 16c0 35.3-28.7 64-64 64c-5.5 0-10.9-.7-16-2c0 .7 0 1.3 0 2c0 44.2 35.8 80 80 80zm0-208a128 128 0 1 1 0 256 128 128 0 1 1 0-256z"></path>
+                              </svg>
+                            </button>
+                        </div>
+                    </div>
+   
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+<br>
+<br>
+<br>
+
+<!-- Footer -->
+<footer class="bg-green-50 text-center text-neutral-700 dark:bg-neutral-800 dark:text-neutral-200">
+  <div class="mx-6 pt-8 pb-4 text-center">
+  <div class="mb-6">
+  <h5 class="mb-2 font-bold uppercase">Conoce más sobre nosotros</h5>
+
+  <p class="mb-4">
+    Explora nuestra amplia gama de servicios y productos diseñados para satisfacer tus necesidades.
+  </p> 
+</div>
+
+  <!-- Links -->
+  <div class="grid grid-cols-1 md:grid-cols-3 mb-4">
+  <!-- First column -->
+  <div class="mb-6">
+    <h5 class="mb-2.5 font-bold text-neutral-600 hover:text-neutral-800 dark:text-neutral-200">
+      Zonas de entregas
+    </h5>
+
+    <ul class="mb-0 list-none">
+      <li>
+        <a href="C:\Users\PC\Desktop\ProyectoIntegrador\Public\html\zonasin.html" class="text-neutral-600 hover:text-neutral-800 dark:text-neutral-200">
+          Ver zonas
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Second column -->
+  <div class="mb-6">
+    <h5 class="mb-2.5 font-bold text-neutral-600 hover:text-neutral-800 dark:text-neutral-200">
+      Servicios
+    </h5>
+
+    <ul class="mb-0 list-none">
+      <li>
+          Intercambios
+      </li>
+
+            <li>
+          Donaciones
+             </li>
+        
+    </ul>
+  </div>
+
+  <!-- Third column -->
+  <div class="mb-6">
+    <h5 class="mb-2.5 font-bold text-neutral-600 hover:text-neutral-600 dark:text-neutral-200">
+      Seguridad
+    </h5>
+
+    <ul class="mb-0 list-none">
+      <li>
+        <a href="#!" class="text-neutral-600 hover:text-neutral-800 dark:text-neutral-200">
+          ¿Cómo funciona?
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+  </div>
+
+  <!-- Copyright -->
+  <div class="bg-gray-50 p-6 text-center dark:bg-neutral-700 flex justify-center items-center">
+      <span>© 2023 Copyright: </span>
+      <!-- Logo -->
+      <h5 class="mx-3" href="#">
+        <img
+          src="C:\Users\PC\Desktop\ProyectoIntegrador\src\logo.png"
+          class="h-5"
+          alt="TE Logo"
+          loading="lazy"/></a>
+      <h5
+        class="font-semibold text-neutral-600 dark:text-neutral-400"
+        href="https://tailwind-elements.com/">FoodieSwap</a>
+   </div>
+
+</footer>
+
+
+<!-- función de barra -->
+<script> 
+  const openMenu = document.getElementById("openMenu")    
+  const tachita = document.getElementById("tachita")
+  openMenu.addEventListener("click", ()=>{
+    document.getElementById("sidenav-7").className = "absolute left-0 top-0 z-[1035] h-full w-60 -translate-x-full overflow-hidden bg-white shadow-[0_4px_12px_0_rgba(0,0,0,0.07),_0_2px_4px_rgba(0,0,0,0.05)] data-[te-sidenav-hidden='false']:translate-x-0 dark:bg-zinc-800"
+    console.log("se dio click")
+  })
+  tachita.addEventListener("click", (e)=>{
+    document.getElementById("sidenav-7").className = "absolute left-0 top-0 z-[1035] h-full w-0 -translate-x-full overflow-hidden bg-white shadow-[0_4px_12px_0_rgba(0,0,0,0.07),_0_2px_4px_rgba(0,0,0,0.05)] data-[te-sidenav-hidden='false']:translate-x-0 dark:bg-zinc-800"
+  })
+  </script>
+
+<!-- función de solicitud aceptada -->
+<script>
+  async function mostrarventana(){
+try {
+window.prompt('Tu solicitud ha sido exitosa');
+}
+  catch(error){
+  }
+}    
+acceder.addEventListener('click', mostrarventana);
+</script>
+
+<!-- funcion para botones del perfil -->
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+      const profileImg = document.getElementById('profileImg');
+      const dropdownMenu = document.getElementById('dropdownMenu');
+
+      profileImg.addEventListener('click', function () {
+          dropdownMenu.classList.toggle('hidden');
+      });
+
+      document.addEventListener('click', function (event) {
+          if (!profileImg.contains(event.target) && !dropdownMenu.contains(event.target)) {
+              dropdownMenu.classList.add('hidden');
+          }
+      });
+  });
+</script>
+
+
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+
+</body>
+</html>
+
+
