@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.8.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="centrar mx-auto">
+
+<div class="relative mx-auto">
+  <img src="C:\Users\PC\Desktop\ProyectoIntegrador\src\fondologin.png" alt="backround" class="w-full h-auto">
+
+<div class="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+
+  <a href="C:\Users\PC\Desktop\ProyectoIntegrador\Public\html\Inicio1.html" type = "burron" class="rounded border-2 border-emerald-200 bg-emerald-200 hover:bg-emerald-500 text-white px-6 py-2 text-base font-medium uppercase leading-normal transition duration-150 ease-in-out focus:outline-none focus:ring-0 absolute top-4 left-4 cursor-pointer">
+    Regresar
+</a>
+               
+    <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+        <div class="flex items-center space-x-4">
+
+          <div class="relative flex flex-col rounded-xl bg-clip-border text-gray-700 shadow-none items-center my-16">
+
+            <h4 class="block font-sans text-3xl font-semibold leading-snug tracking-normal text-emerald-400 antialiased">
+                Iniciar sesión
+            </h4>
+            <p class="mt-1 block font-sans text-base font-normal leading-relaxed text-gray-700 antialiased">
+              Ingresa tus datos
+            </p>
+            <form class="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96">
+              <div class="mb-4 flex flex-col gap-6">
+               
+                <div class="relative h-11 w-full min-w-[200px]">
+                  <input
+                    class="peer h-full w-full rounded-md border border-blue-gray-200 border-t-white bg-white px-3 py-3 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-emerald-300 focus:border-t-white focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
+                    placeHolder=" "
+                  />
+                  <label class="before:content[' '] after:content[' '] pointer-events-none absolute left-0 -top-1.5 flex h-full w-full select-none text-[11px] font-normal leading-tight text-blue-gray-400 transition-all before:pointer-events-none before:mt-[6.5px] before:mr-1 before:box-border before:block before:h-1.5 before:w-2.5 before:rounded-tl-md before:border-t before:border-l before:border-blue-gray-200 before:transition-all after:pointer-events-none after:mt-[6.5px] after:ml-1 after:box-border after:block after:h-1.5 after:w-2.5 after:flex-grow after:rounded-tr-md after:border-t after:border-r after:border-blue-gray-200 after:transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[4.1] peer-placeholder-shown:text-blue-gray-500 peer-placeholder-shown:before:border-white peer-placeholder-shown:after:border-white peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-emerald-300 peer-focus:before:border-t-2 peer-focus:before:border-l-2 peer-focus:before:!border-emerald-300 peer-focus:after:border-t-2 peer-focus:after:border-r-2 peer-focus:after:!border-emerald-500 peer-disabled:text-white peer-disabled:before:border-white peer-disabled:after:border-white peer-disabled:peer-placeholder-shown:text-blue-gray-500">
+                    Correo
+                  </label>
+                </div>
+                <div class="relative h-11 w-full min-w-[200px]">
+                  <input
+                    type="password"
+                    class="peer h-full w-full rounded-md border border-blue-gray-200 border-t-white bg-white px-3 py-3 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-emerald-300 focus:border-t-white focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
+                    placeHolder=" "
+                  />
+                  <label class="before:content[' '] after:content[' '] pointer-events-none absolute left-0 -top-1.5 flex h-full w-full select-none text-[11px] font-normal leading-tight text-blue-gray-400 transition-all before:pointer-events-none before:mt-[6.5px] before:mr-1 before:box-border before:block before:h-1.5 before:w-2.5 before:rounded-tl-md before:border-t before:border-l before:border-blue-gray-200 before:transition-all after:pointer-events-none after:mt-[6.5px] after:ml-1 after:box-border after:block after:h-1.5 after:w-2.5 after:flex-grow after:rounded-tr-md after:border-t after:border-r after:border-blue-gray-200 after:transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[4.1] peer-placeholder-shown:text-blue-gray-500 peer-placeholder-shown:before:border-white peer-placeholder-shown:after:border-white peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-emerald-300 peer-focus:before:border-t-2 peer-focus:before:border-l-2 peer-focus:before:!border-emerald-300 peer-focus:after:border-t-2 peer-focus:after:border-r-2 peer-focus:after:!border-emerald-300 peer-disabled:text-white peer-disabled:before:border-white peer-disabled:after:border-white peer-disabled:peer-placeholder-shown:text-blue-gray-500">
+                    Contraseña
+                  </label>
+                </div>
+              </div>
+              <div class="inline-flex items-center">
+                
+              </div>
+              <button
+                class="mt-6 block w-full select-none rounded-lg bg-emerald-300 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-emerald-300/20 transition-all hover:shadow-lg hover:shadow-emerald-300/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                type="button"
+                data-ripple-light="true">
+                Iniciar sesión
+              </button>
+              <p class="mt-4 block text-center font-sans text-base font-normal leading-relaxed text-gray-700 antialiased">
+                ¿Aún no tienes una cuenta?
+                <a
+                  class="font-medium text-emerald-300 transition-colors hover:text-emerald-500"
+                  href="C:\Users\PC\Desktop\ProyectoIntegrador\Public\html\Sign_ing.html">
+                  Registrarse
+                </a>
+              </p>
+            </form>
+          </div>
+
+        </div>
+    </div>
+</div>
+
+</div>
+
+ <script src="https://cdn.tailwindcss.com"></script>   
+
+</body>
+</html>
